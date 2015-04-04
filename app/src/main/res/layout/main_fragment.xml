@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFCCCCCC"
+    android:weightSum="1"
+    >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/logo_play"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/facebook"
+        android:layout_alignEnd="@+id/facebook"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:layout_gravity="top">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Login via Facebook"
+            android:id="@+id/facebook"
+
+            android:background="#3b5998"
+            android:layout_margin="50dp"
+            android:textColor="#ffffffff"
+            android:layout_gravity="bottom" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_margin="50dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Logout"
+            android:id="@+id/logout"
+
+            android:background="#3b5998"
+            android:layout_margin="50dp"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
 
 </LinearLayout>
